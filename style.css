@@ -1,0 +1,328 @@
+body{
+    background-color: rgba(212, 200, 200, 0.2);
+    height: 1000px;
+    
+}
+/* from stackoverflow, I wanted to hide the scrollbar dont know how it work  */
+::-webkit-scrollbar {
+    display: none;
+}
+/* deleting a links styles */
+a{
+    color: #000000;
+    text-decoration: none;
+}
+/* navbar styling */
+header{
+    background: rgb(192,32,38);
+    background: linear-gradient(331deg, rgba(192,32,38,1) 0%,  rgba(0,0,0,1) 32%);
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+nav{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+.header_title a{
+    color: rgba(212, 200, 200, 1);
+    font-size: 3rem;
+}
+.header_menu{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+.header_menu-items a{
+    color: rgba(212, 200, 200, 1);
+    font-size: 1.4rem;
+}
+.header_menu-items a:hover{
+    border-bottom: solid 1px #c02026;
+    padding-bottom: 3px;
+    color: white;
+    transition: .5s;
+    font-size: 1.5rem;
+}
+
+/* navbar style for medium devices */
+@media (min-width: 768px) and (max-width: 1024px){
+    nav {
+        flex-direction: column;
+        padding: 1.5rem 0;
+    }
+    header{
+        background: linear-gradient(1deg, rgba(192,32,38,1) 0%,  rgba(0,0,0,1) 32%);
+    }
+    .header_title a{
+        font-size: 2.5rem;
+        width: 100%;
+    }
+    .header_menu{
+        width: 100%;
+        margin: 2rem 0 0 0;
+        justify-content: space-evenly;
+    }
+    .header_menu-items a{
+        color: rgba(212, 200, 200, 1);
+        font-size: 1.3rem;
+    }
+    .header_menu-items a:hover{
+        border-bottom: solid 1px #c02026;
+        padding-bottom: 3px;
+        color: white;
+        transition: .5s;
+        font-size: 1.4rem;
+    }
+}
+
+/* navbar style for small devices */
+@media (min-width: 381px) and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    header{
+        background: linear-gradient(115deg, rgba(192,32,38,1) 0%,  rgba(0,0,0,1) 32%);
+    }
+    .header_title a{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .header_menu{
+        width: 100%;
+        margin: 2rem 0 0 0;
+        justify-content: space-evenly;
+    }
+    .header_menu-items a{
+        color: rgba(212, 200, 200, 1);
+        font-size: 1.3rem;
+    }
+    .header_menu-items a:hover{
+        border-bottom: solid 1px #c02026;
+        padding-bottom: 3px;
+        color: white;
+        transition: .5s;
+        font-size: 1.4rem;
+    }
+}
+
+/* end of the navbar section */
+
+/* Hero image section */
+.hero_Container img{
+    width: 100%;
+    margin-top: 6rem;
+}
+
+/* hero section style for medium devices */
+@media (min-width: 768px) and (max-width: 1024px){
+    .hero_Container img{
+        margin-top: 6rem;
+    }
+}
+
+/* hero section for small devices */
+@media (min-width: 381px) and (max-width: 767px) {
+    .hero_Container img{
+        margin-top: 6rem;
+    }
+}
+
+/* end of the Hero image section */
+
+/* start of main content style*/
+.container{
+    width: 100%;
+    margin: 10rem 0;
+}
+.content_container{
+    width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.content_image{
+    width: 50%;
+    border-radius: 1rem;
+}
+.content_write{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.content_title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.content_paragraph{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.important-mentions{
+    color: #c02026;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px #000000;
+}
+
+/* content section style for medium devices */
+@media (min-width: 768px) and (max-width: 1024px){
+    .content_container{
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .content_image{
+        width: 100%;
+    }
+    .content_write{
+        width: 100%;
+        margin: 2rem 0;
+        text-align: center;
+    }
+}
+
+/* content section style for small devices */
+@media (min-width: 381px) and (max-width: 767px) {
+    .container{
+        margin-top: 2rem;
+    }
+    .content_container{
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .content_image{
+        width: 100%;
+    }
+    .content_write{
+        width: 100%;
+        margin: 2rem 0;
+        text-align: center;
+    }
+    .content_title{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+    .content_paragraph{
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* hr styler section */
+
+.history-work_breaker{
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(192, 32, 38, 0.75), rgba(0, 0, 0, 0));
+    margin: 8rem 0 0 0;
+}
+/* work styler section */
+.main_title{
+    font-size: 3rem;
+    text-align: center;
+}
+.work_container{
+    padding-top: 8rem;
+    background: linear-gradient(180deg, rgba(212, 200, 200, 0.2) 0%, rgba(192,32,38,.3) 38%, rgba(192,32,38,.7) 50%, rgba(0,0,0,1) 90%);
+}
+.work_content_container{
+    width: 80%;
+    margin: 8rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work_content_image{
+    width: 30%;
+    border-radius: 1rem;
+}
+.work_content_write{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.work_content_title{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.work_content_paragraph{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.change_order-1{
+    order: 1;
+}
+.change_order-2{
+    order: 0;
+}
+.change_font-2{
+    color: #d4c8c8;
+}
+
+/* content section style for medium devices */
+@media (min-width: 768px) and (max-width: 1024px){
+    .work_content_container{
+        flex-direction: column;
+    }
+    .work_content_image{
+        width: 60%;
+        border-radius: 1rem;
+        order: 1;
+    }
+    .work_content_write{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 3rem;
+        order: 0;
+    }
+    .work_content_title{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    .work_content_paragraph{
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* content section style for small devices */
+@media (min-width: 381px) and (max-width: 767px) {
+    .main_title{
+        font-size: 2.2rem;
+    }
+    .work_content_container{
+        flex-direction: column;
+    }
+    .work_content_image{
+        width: 60%;
+        border-radius: 1rem;
+        order: 1;
+    }
+    .work_content_write{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 3rem;
+        order: 0;
+    }
+    .work_content_title{
+        font-size: 1.7rem;
+        margin-bottom: 3rem;
+    }
+    .work_content_paragraph{
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+}
