@@ -1,7 +1,9 @@
+
+
 body{
     background-color: rgba(212, 200, 200, 0.2);
     height: 1000px;
-    
+    font-family: 'Manga Temple', sans-serif;
 }
 /* from stackoverflow, I wanted to hide the scrollbar dont know how it work  */
 ::-webkit-scrollbar {
@@ -32,9 +34,10 @@ nav{
 .header_title a{
     color: rgba(212, 200, 200, 1);
     font-size: 3rem;
+    font-family: 'Manga', sans-serif;
 }
 .header_menu{
-    width: 35%;
+    width: 45%;
     display: flex;
     justify-content: space-between;
 }
@@ -91,13 +94,13 @@ nav{
         background: linear-gradient(115deg, rgba(192,32,38,1) 0%,  rgba(0,0,0,1) 32%);
     }
     .header_title a{
-        font-size: 1.5rem;
+        font-size: 2rem;
         width: 100%;
     }
     .header_menu{
         width: 100%;
         margin: 2rem 0 0 0;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     .header_menu-items a{
         color: rgba(212, 200, 200, 1);
@@ -167,10 +170,10 @@ nav{
 }
 .important-mentions{
     color: #c02026;
-    font-weight: bold;
-    text-shadow: 2px 2px 10px #000000;
+    font-family: 'zai Brushy Freshy', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 500;
 }
-
 /* content section style for medium devices */
 @media (min-width: 768px) and (max-width: 1024px){
     .content_container{
@@ -223,6 +226,10 @@ nav{
     height: 3px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(192, 32, 38, 0.75), rgba(0, 0, 0, 0));
     margin: 8rem 0 0 0;
+}
+.work-contact_breaker{
+    margin: 0;
+    background-color: #000000;
 }
 /* work styler section */
 .main_title{
@@ -325,4 +332,66 @@ nav{
         margin-bottom: 2rem;
         font-size: 1.2rem;
     }
+}
+
+
+/* contact form styling */
+.work-contact_breaker{
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(192, 32, 38, 0.75), rgba(0, 0, 0, 0));
+}
+.contact-form_container{
+    background-color: #000000;
+    color: #d4c8c8;
+    width: 100%;
+}
+.contact-form-content_container{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 8rem;
+    justify-content: space-evenly;
+}
+.contact-image{
+    height: 35rem;
+    border-radius: 3rem;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30%;
+    font-size: 1.7rem;
+}
+.contact-form input{
+    height: 2rem;
+    font-family: 'Manga Temple', sans-serif;
+    border-radius: .5rem;
+    padding-left: 1rem;
+    background-color: #d4c8c8;
+}
+.contact-form textarea{
+    font-family: 'Manga Temple', sans-serif;
+    padding: .6rem .4rem;
+    background-color: #d4c8c8;
+}
+.submit-btn{
+    width: 25%;
+    height: 2.5rem;
+    font-size: 1.7rem;
+    font-family: 'Manga Temple', sans-serif;
+    border-radius: 2rem;
+    margin: 0 auto;
+    color: #d4c8c8;
+    background-color: #000000;
+    border-top: #c02026 solid 1px;
+    border-left: #c02026 solid 1px;
+    transition: .7s;
+    
+}
+.submit-btn:hover{
+    border: 1px solid #c02026;
+    width: 26%;
+    height: 2.7rem;
 }

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset-style.css">
+    <link href="https://fonts.cdnfonts.com/css/manga-temple" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/manga" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/zai-brushy-freshy" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Tribute to Kentaro Miura</title>
 </head>
@@ -20,12 +23,12 @@
                         </a>
                     </li>
                     <li class="header_menu-items">
-                        <a href="#">
+                        <a href="#work">
                             Works
                         </a>
                     </li>
                     <li class="header_menu-items">
-                        <a href="#">
+                        <a href="#contact">
                             Contact Us
                         </a>
                     </li>
@@ -56,7 +59,7 @@
                 </div>
             </div>
         </section>
-        <hr class="history-work_breaker">
+        <hr class="history-work_breaker" id="work">
         <section class="work_container">
             <h2 class="main_title">Miura's works troughout his carreer.</h2>
             <div class="work_content_container">
@@ -97,6 +100,26 @@
                     <p class="work_content_paragraph change_font-2">
                         At its core, Berserk is a story about love, betrayal, and the consequences of power. Guts is a complex character who has suffered greatly and is driven by his desire for vengeance. Along the way, he meets a cast of interesting characters, including the mysterious and powerful Schierke, and the hilarious and lovable Puck.
                     </p>
+                </div>
+            </div>
+            <hr class="work-contact_breaker">
+        </section>
+        <section class="contact-form_container">
+            <div class="contact-form-content_container">
+                <div class="contact-image-container" id="contact">
+                    <img class="contact-image" src="images/gato.jpg" alt="Gato de ojos grandes.">
+                </div>
+                    <form action="" id="contact-form" class="contact-form">
+                        <label for="user_name">Name</label>
+                        <input type="text" id="user_name" placeholder="Please enter your name" required>
+
+                        <label for="user_email">Email</label>
+                        <input type="text" id="user_email" placeholder="example@email.com" required>
+
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" placeholder="Your message..." rows="10"></textarea>
+
+                        <button type="submit" class="submit-btn">Send</button>
                 </div>
             </div>
         </section>
