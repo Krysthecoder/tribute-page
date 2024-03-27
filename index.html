@@ -104,12 +104,13 @@
             </div>
             <hr class="work-contact_breaker">
         </section>
-        <section class="contact-form_container">
+        <section class="contact-form_container" id="contact">
+            <h2 class="main_title contact_title">Contact Us</h2>
             <div class="contact-form-content_container">
-                <div class="contact-image-container" id="contact">
+                <div class="contact-image-container" >
                     <img class="contact-image" src="images/gato.jpg" alt="Gato de ojos grandes.">
                 </div>
-                    <form action="" id="contact-form" class="contact-form">
+                    <form action="submit" id="contact-form" class="contact-form">
                         <label for="user_name">Name</label>
                         <input type="text" id="user_name" placeholder="Please enter your name" required>
 
@@ -120,9 +121,16 @@
                         <textarea name="message" id="message" placeholder="Your message..." rows="10"></textarea>
 
                         <button type="submit" class="submit-btn">Send</button>
-                </div>
+                    </form>
             </div>
         </section>
+        <hr class="work-contact_breaker">
     </main>
+    <footer>
+        <div class="footer-container">
+            <h3 class="footer-title">Thank you for your time.</h3>
+            <p class="footer-text">&copy; 2024</p>
+        </div>
+    </footer>
 </body>
 </html>
